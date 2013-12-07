@@ -1,3 +1,6 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+source: jekyll
+permalink: /:categories/:title
+assets:
+  compress:
+    js:   uglifier
+    css:  sass
