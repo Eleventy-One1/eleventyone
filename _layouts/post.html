@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+  {% include header.html %}
+
+  <div class="container">
+    <div class="row">
+    <div class="box">
+    <div class="col-lg-12">
+      <hr>
+      <h2 class="intro-text text-center">{{ page.header }}</h2>
+      <hr>
+    </div>
+    <div class="col-lg-12 text-center">
+      <img class="img-responsive img-border img-full" src=" {{page.image_url}} ">
+      <h2>{{ page.title }}<br><small>{{ page.date | date: "%-d %B %Y" }}</small></h2>
+     <div class=" text-left"> {{ content }} 
+     </div>
+      <hr>
+    </div>
+    </div><!-- /.container -->
+    
+  {% include footer.html %}
+
+  {% include javascripts.html %}
+
+  </body>
+</html>
