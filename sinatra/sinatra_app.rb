@@ -4,7 +4,10 @@ set :public_dir, Proc.new { File.join(root, "_site") }
 set :views, Proc.new { File.join(File.dirname(__FILE__), "views") }
 
 post '/contact', :provides => :json do
-   msg = params.to_s
+   msg = <<-MSG
+   Subject: EleventyOne Contact Message
+   #{params.to_s}
+   MSG
    smtp = Net::SMTP.new 'smtp.gmail.com', 587
    smtp.enable_starttls
    smtp.start(ENV['EMAIL_DOMAIN'], ENV['GMAIL_USERNAME'], ENV['GMAIL_PASSWORD'], :login) do
