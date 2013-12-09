@@ -1,12 +1,7 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'coffee-script'
-  gem 'compass'
-  #gem 'zurb-foundation'
-  gem 'uglifier'
-  gem 'jekyll'
-  gem 'jekyll-assets'
+  gem 'jekyll', '1.4.0'
 end
 
 gem 'sinatra'

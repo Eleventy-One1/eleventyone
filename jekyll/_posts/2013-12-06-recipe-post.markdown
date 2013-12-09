@@ -13,15 +13,13 @@ My Famous “Emerald Ecstasy” Green Smoothie
 (this is the Green Smoothie that I make at a show)
 
 Put Ingredients into your Vitamix in the following order:
-<ul>
-<li>1 peeled orange</li>
-<li>1/4 large Pineapple or 1/3 of a small Pineapple</li>
-<li>1/2 large Banana</li>
-<li>1/2 small Apple or 1/4 of a large one</li>
-<li>2 big hand fulls of Spinach (at a show I add a touch of Kale and Parsley too)</li>
-<li>2 cups of Ice</li>
-</ul>
 
+- 1 peeled orange
+- 1/4 large Pineapple or 1/3 of a small Pineapple
+- 1/2 large Banana
+- 1/2 small Apple or 1/4 of a large one
+- 2 big hand fulls of Spinach (at a show I add a touch of Kale and Parsley too)
+- 2 cups of Ice
 
 This will make 2-3 LARGE servings or 4-5 smaller (juice glass size) servings
 
