@@ -6,8 +6,6 @@ This reposititory was meant as a starting point to be used with [github-heroku-j
 
 ## how to
 
-
-
 * install gems: ```bundle install```
 * build: ```jekyll build```
 * run: ```foreman start```
