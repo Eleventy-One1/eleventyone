@@ -1,14 +1,15 @@
+require 'net/smtp'
+
 set :public_dir, Proc.new { File.join(root, "_site") }
 set :views, Proc.new { File.join(File.dirname(__FILE__), "views") }
 
 post '/contact', :provides => :json do
-  #
-  #
-  # Code to handle the data sumbitted by the contact form
-  #
-  #
-  puts "Here comes your data!"
-  puts params
+  msg = params.to_s
+  smtp = Net::SMTP.new 'smtp.gmail.com', 587
+  smtp.enable_starttls
+  smtp.start(ENV['EMAIL_DOMAIN'], ENV['GMAIL_USERNAME'], ENV['GMAIL_PASSWORD'], :login) do
+    smtp.send_message(msg, ENV["GMAIL_ADDRESS"], ENV["GMAIL_ADDRESS"])
+  end
 end
 
 before do
